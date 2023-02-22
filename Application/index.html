@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rahmadina</title>
+ 
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <header class="nav-container" id="nav-container">
+        <div class="title">
+            <a href="#home">Personal Website</a>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main id="main">
+        <div class="sub-menu" id="home">
+            <h3>≧◠‿◠≦</h3>
+            <h1>Hello, I'm Dina</h1>
+            <a href="#about">Let's know me more!</a>
+        </div>
+        <div class="sub-menu" id="about">
+            <div id="biodata">
+                <aside>
+                    <img src="Assets/avatar.jpeg" alt="Foto Rahmadina" id="avatar">
+                    <h5>Rahmadina</h5>
+                    <h5>Bangkit'23 Cohorts</h5>
+                </aside></div>
+            <div id="description">
+                <article>
+                    <h1>Let's talk about Dina</h1>
+                    <p>She was born on May 2002 in the city of West Sumatera called Padang. 
+                        She is the youngest kid among her siblings. 
+                        Her favourite dishes are these foods that were made by her mama.
+                        And her the most loved man ones is her papa
+                        She likes blue and also she let her cats to managed her instagram account.
+                    </p>
+                </article></div>
+        </div>
+        
+        <div class="sub-menu" id="experiences">
+            <h1>What has she passed?</h1>
+        </div>
+        <div class="sub-menu" id="contacts">
+            <h1>Let's Connect With Me!</h1>
+        </div>
+    </main>
+    <footer>
+        &copy; 2023, Rahmadina
+    </footer>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            document.getElementById("nav-container").style.top = "0";
+          } else {
+            document.getElementById("nav-container").style.top = "-50px";
+          }
+        }
+        </script>
+  </body>
+  
+</html>
