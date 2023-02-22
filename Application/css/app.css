@@ -61,7 +61,9 @@
     transition: 0.75s;
   }
 #about aside{
+    width: 25%;
     text-align: center;
+    border-color: black 2px;
 }
 #description{
     text-align: justify;
