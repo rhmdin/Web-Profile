@@ -45,7 +45,7 @@ h1{
   font-size: 30pt;
 }
 
-section[id="home"]{
+section[id="home"], section[id="contacts"]{
   text-align: center;
 }
 section[id="about"],section[id="experiences"]{
@@ -54,13 +54,16 @@ section[id="about"],section[id="experiences"]{
 }
 .box{
   margin-top: 0;
-  display: flex;
-  flex-direction: row;
   padding: 1vh 5vw;
   height: 100%;
   border: 1px solid #8a8a8a;
   border-radius: 1%;
   overflow: auto;
+}
+div[id="about-biodata"]{
+  display: flex;
+  flex-direction: row;
+
 }
 
 section[id="about"] img[id="avatar"]{
