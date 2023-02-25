@@ -1,27 +1,46 @@
- 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
   }
 body{
+  background-color: #FCFFE7;
   padding: 0%;
   display: flex;
   flex-direction: column;
+  font-family: 'Inconsolata', monospace;
 }
 a{
   text-decoration: none;
   color: black;
 }
 .nav-container{
-  background-color: rgb(245, 157, 172);
+  background-color: #3A98B9;
+  color: #FCFFE7;
   display: flex;
   position: fixed;
  justify-content:space-between;
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow:10px 10px 25px 5px pink;
+  transition: 0.7s;
+}
+.nav:hover{
+  color: #FCFFE7;
+  font-weight: bolder;
+}
+.dina:hover{
+  color:#B3005E;
+  font-weight: bolder;
+}
+.cited:hover{
+  color: blue;
+  font-weight: bolder;
 }
 .nav-menu li{
+  color: #FCFFE7;
   display: inline;
   list-style-type: none;
   padding: 2vw;
@@ -38,14 +57,33 @@ a{
   width: 100%;
   overflow: auto;
 }
-.connect{
-  width: 3cm;
-}
-.connectbox{
-  background-color: aqua;
+.box-contacts{
+  margin-left: 5%;
+  margin-right: auto;
   overflow: auto;
 }
-
+.connectbox{
+  display: flex;
+  flex-direction: row;
+  margin: 3%;
+  float: left;
+  padding: 25px;
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #1f5669;
+  overflow: auto;
+  border-radius:4%;
+  width: 5cm;
+  height: 3.5cm;
+}
+.box{
+  margin-top: 0;
+  padding: 5% 5vw;
+  height: 100%;
+  border: 1px solid #8a8a8a;
+  border-radius: 1%;
+  overflow: auto;
+}
 h3{
   margin-top: 30vh;
 }
@@ -59,14 +97,6 @@ p{
 }
 ul,p{
   font-size: larger;
-}
-.box{
-  margin-top: 0;
-  padding: 10vh 5vw;
-  height: 100%;
-  border: 1px solid #8a8a8a;
-  border-radius: 1%;
-  overflow: auto;
 }
 
 section[id="home"], section[id="contacts"]{
@@ -101,15 +131,18 @@ aside{
   width: 55%;
 }
 
-div[id="box-contacts"]{
-  display: inline;
-  list-style-type: none;
-  padding: 2vw;
-  text-decoration: none;
+section[id="contacts"]{
+  padding: 15% 5% 5%;
+  height: 100%;
 }
-
+footer{
+  padding: 1%;
+  background-color: #fcffeb;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
-
   section[id="about"] h1{
     font-size: 30pt;
     margin-top: 5mm;
@@ -138,4 +171,11 @@ section[id="about"]{
   padding: 15vh 5vw 5vh 5vw;
   height: 100%;
 }
+section[id="contacts"]{
+  padding: 15% 20% 15% 20%;
+  height: 100%;
 }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&family=Shantell+Sans:wght@300;500;600&display=swap');
