@@ -5,6 +5,7 @@
     <title>Rahmadina</title>
  
     <link rel="stylesheet" href="css/app.css">
+    <script src="js/app.js"></script>
   </head>
   <body>
     <header class="nav-container" id="nav-container">
@@ -24,19 +25,22 @@
         <section class="sub-menu" id="home">
             <h3>≧◠‿◠≦</h3>
             <h1>Hello, I'm Dina</h1>
-            <a href="#about">Let's know me more!</a>
+            <a href="#about">Wait, who is she?</a>
         </section>
         <section class="sub-menu" id="about">
           <div class="box" id="about-biodata">
             <aside>
               <img src="Assets/avatar.jpeg" alt="Foto Rahmadina" id="avatar">
-              <h5>Rahmadina</h5>
-              <h5>Bangkit'23 Cohorts</h5>
+              <br>
+              <p style="text-align: center;">Rahmadina
+                <br>
+                <img src="Assets/icon_location.png" alt="location" style="width: 5mm;"><a href="https://goo.gl/maps/4wNgjNng9b6ZkWTBA"  target="_blank"> Padang, Indonesia</a>
+            </p> 
             </aside>
             <div id="description">
               <article>
-                <h1>She is Rahmadina</h1>
-                  <p>She was born in 2002 in the capital city of West Sumatera. 
+                <h1>Rahmadina</h1>
+                  <p style="margin-top: -5mm;">She was born in 2002 in the capital city of West Sumatera. 
                         She is the youngest kid among her siblings. 
                         Her favourite dishes are these foods that were made by her mama 
                         and her the most loved man ones is her papa.
@@ -50,7 +54,7 @@
                 </ul>
                 <h2>In free time</h2>
                 <ul>
-                  <li>She plays Pikachu and Blissey at Pokemon Unite a lot</li>
+                  <li>She plays Pikachu and Blissey a lot at Pokemon Unite </li>
                   <li>She takes pictures of stray cats and let them manage her Instagram account</li>
                 </ul>
               </article>
@@ -60,42 +64,62 @@
         <section class="sub-menu" id="experiences">
           <div class="box">
             <h1>Miscellaneous</h1>
-            <p>miscellaneous emphasizes the idea of the mixture of things of different kinds or natures</p>
-            <h2>Soft and Hard Skills</h2>
+            <p>
+              (adjective) <cite>consisting of a mixture of various things that are not usually connected with each other</cite>
+              (cited from <a target="_blank" href="https://dictionary.cambridge.org/dictionary/english/miscellaneous">cambridge dictionary</a> )
+            </p>
+            <h2>Experiences</h2>
             <ul>
-              <li>Public Skill</li>
+              <li>IT Officer at Andalas Univeristy Career and Development | 2021 - present</li>
+              <li>Assistant at LDKOM SI Unand | 2021 - present</li>
+              <li>Treasurer at Intelectual and Skill Development Division, HMSI Unand | 2022</li>
+              <li>Comittee at Lustrum II FTI Unand | 2022</li>
+              <li>Event Organizer Staff at Bakti FTI Unand | 2022</li>
+              <li>Public Relation at Pekan Andalas | 2021</li>
             </ul>
-            <h2>Organization Experiences</h2>
+            <h2>Skills</h2>
             <ul>
-              <li>Laboratory Assistant at Laboratory of Computing Foundations</li>
-              <li>Treasurer at Intelectual and Skill Development, Information System Student Association</li>
+              <li>Soft Skills: communication, adaptable, friendly, negotiation and persuasion</li>
+              <li>Hard Skills: HTML, CSS, C++, Java, Php, MySql, PostgreSql</li>
+              <li>Tool Skills: VS Code, Github, Android Studio, Borland C++ Builder 6</li>
             </ul>
           </div>
         </section>
         <section class="sub-menu" id="contacts">
-          <div class="box">
+          <div class="box" >
             <h1>Let's Connect With Me!</h1>
-            <ul>
-              <li>Instagram</li>
-              <li>Gmail</li>
+            <ul id="box-contacts">
+              <li>
+                <div class="connectbox">
+                  <a href="https://www.instagram.com/yudin152/" target="_blank">
+                  <img src="Assets/icon_instagram.png" alt="" class="connect" style="width: 3cm;">Instagram</a>
+                </div>
+              </li>
+              <li>
+                <div class="connectbox">
+                  <a href="mailto:2011522012_Rahmadina@student.unand.ac.id"  target="_blank">Email</a>
+                  <img src="Assets/icon_outlook.png" alt="" class="connect">
+                </div>
+              </li>
+              <li>
+                <div class="connectbox">
+                  <a href="https://www.Github.com/rhmdin"  target="_blank">Github</a>
+                  <img src="Assets/icon_github.png" alt="" class="connect">
+                </div>
+              </li>
+              <li>
+                <div class="connectbox">
+                  <a href="https://www.LinkedIn.com/yudin152"  target="_blank">LinkedIn</a>
+                  <img src="Assets/icon_linkedin.png" alt="" class="connect">
+                </div>
+              </li>
             </ul>
           </div>
         </section>
     </main>
     <footer>
-        &copy; 2023, Rahmadina
+        &copy; 2023 by Rahmadina | Created for Dicoding Submission
     </footer>
-
-    <script>
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-          if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-            document.getElementById("nav-container").style.top = "0";
-          } else {
-            document.getElementById("nav-container").style.top = "-50px";
-          }
-        }
-        </script>
   </body>
   
 </html>
